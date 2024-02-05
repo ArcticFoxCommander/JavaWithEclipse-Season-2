@@ -11,5 +11,5 @@ public class FirstLesson {
 		else {
 			System.out.println("Negative Number");
 		}
+		}
 	}
-}
