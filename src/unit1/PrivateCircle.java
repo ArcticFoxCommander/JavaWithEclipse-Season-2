@@ -7,7 +7,7 @@ public double getArea() {
   return radius * radius * Math.PI; 
 } 
 public static void main(String[] args) {
-    Circle myCircle = new Circle(); 
+    SimpleCircle myCircle = new SimpleCircle(); 
     System.out.println("Radius is "+ myCircle.radius); 
 } 
 } 
