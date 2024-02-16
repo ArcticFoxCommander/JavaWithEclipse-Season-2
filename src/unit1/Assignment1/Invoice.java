@@ -32,11 +32,14 @@ class Invoice {
 		partDescription = newPartDescription; 
 	}
 	
-	public int setQuantity() {
+	public int getQuantity() {
 		return quantity;
 	}
 	
 	public void setQuantity(int newQuantity) {
+		if (newQuantity < 0) {
+			newQuantity = 0;
+		}
 		quantity = newQuantity;
 	}
 	
@@ -45,14 +48,23 @@ class Invoice {
 	}
 	
 	public void setPricePerItem(double newPricePerItem) {
+		if (newPricePerItem < 0) {
+			newPricePerItem = 0.0;
+		}
 		pricePerItem = newPricePerItem;
 	}
 	
 	public double setInvoiceAmount() {
-		return invoiceAmount = quantity * pricePerItem;
+		return quantity * pricePerItem;
 	}
 	
 	public String toString() {
-		return "The JAVA Hardware Store - Invoice System" + "\n" + "Part Number: " + partNumber + "\n" + "Part Description: " + partDescription + "\n" + "Quantity: " + quantity + "\n" + "Price Per Item: $" + pricePerItem + "\n" + "Invoice Amount: $" + setInvoiceAmount();
+		if (quantity < 0) {
+			quantity = 0;
+		}
+		if (pricePerItem < 0.0) {
+			pricePerItem = 0.0;
+		}
+		return "The JAVA Hardware Store - Invoice System" + "\n" + "Part Number: " + partNumber + "\n" + "Part Description: " + partDescription + "\n" + "Quantity: " + quantity + "\n" + "Price Per Item: $" + pricePerItem + "\n" + "Invoice Amount: $";
 	}
 }
