@@ -2,18 +2,19 @@ package unit1.Assignment1;
 
 class Invoice {
 
-	public String partNumber = "0001";
-	public String partDescription = "An item.";
-	public int quantity = 0;
-	public double pricePerItem = 0;
+	private String partNumber = "0001";
+	private String partDescription = "An item.";
+	private int quantity = 0;
+	private double pricePerItem = 0;
 	public double invoiceAmount = 0;
 	
-	Invoice() {
+	
+	Invoice(String partNumber, String partDescription, int quantity, double pricePerItem) {
 		
-		partNumber = "0001";
-		partDescription = "An item.";
-		quantity = 0;
-		pricePerItem = 0;
+		this.partNumber = partNumber;
+		this.partDescription = partDescription;
+		this.quantity = quantity;
+		this.pricePerItem = pricePerItem;
 	}
 	
 	public String getPartNumber() {
