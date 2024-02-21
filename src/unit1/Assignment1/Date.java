@@ -2,12 +2,14 @@ package unit1.Assignment1;
 
 public class Date {
 
-	public int month = 12;
-	public int day = 31;
-	public int year = 1999;
+	private int month = 12;
+	private int day = 31;
+	private int year = 1999;
 	
-	Date() {
-		
+	Date(int month, int day, int year) {
+		this.month = month;
+		this.day = day;
+		this.year = year;
 	}
 	
 	public int getMonth() {
