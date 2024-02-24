@@ -9,7 +9,7 @@ public class SavingsAccount {
 	}
 
 	public void calculateMonthlyInterest() {
-		double newSavingsBalance = savingsBalance * (annualInterestRate / 12);
+		double newSavingsBalance = (savingsBalance * (annualInterestRate) / 12);
 		savingsBalance += newSavingsBalance;
 	}
 	
