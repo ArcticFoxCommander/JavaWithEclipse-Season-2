@@ -9,7 +9,7 @@ public class Stock {
 		double priceChangePercentage;
 		
 		Stock() {
-			this("SYM", "Corporation", 1, 1);
+			this("", "", 0, 0);
 		}
 		
 		Stock(String symbol, String name, double previousClosingPrice, double currentPrice) {
