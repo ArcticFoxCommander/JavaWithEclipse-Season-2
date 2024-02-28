@@ -7,7 +7,7 @@ public class Account {
 	private int id;
 	private double balance;
 	private double annualInterestRate;
-	private Date dateCreated;
+	private Date dateCreated = new Date();
 	
 	Account() {
 		this(0, 0.0, 0.0);
@@ -30,7 +30,6 @@ public class Account {
 
 
 	public Date dateCreated() {
-		Date dateCreated = new Date();
 		return dateCreated;
 	}
 	
