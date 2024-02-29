@@ -19,7 +19,13 @@ Assignment1 - Question (1-3)
 
 Assignment2 - README contained
 
-Assignment3 - WIP
+Assignment3 - Question (1-3)
+- Location
+- Savings Account
+- Polygon
+
+Assignment4 - Question (1)
+- Account
 
 **Exercises:**
 
@@ -34,3 +40,6 @@ Exercise2 - Question (10)
 Exercise3 - Question (1-5)
 - Count
 
+Exercise4 - Question (4 and 6)
+- Stock
+- Student
