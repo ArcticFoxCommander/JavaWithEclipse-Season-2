@@ -8,7 +8,7 @@ public class Account {
 	private double balance;
 	private double annualInterestRate;
 	private Date dateCreated = new Date();
-	
+
 	Account() {
 		this(0, 0.0, 0.0);
 	}
@@ -19,7 +19,7 @@ public class Account {
 		this.balance = balance;
 		this.annualInterestRate = annualInterestRate;
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -32,29 +32,29 @@ public class Account {
 	public Date dateCreated() {
 		return dateCreated;
 	}
-	
+
 	double getMonthlyInterestRate() {
 		return annualInterestRate / 12;
 	}
-	
+
 	double getMonthlyInterest() {
-	
-	return getBalance() * (annualInterestRate / 1200);	
+
+		return getBalance() * (annualInterestRate / 1200);	
 	}
-	
+
 	public void withdraw(double withdraw) {
 		if (withdraw > getBalance()) {
 			System.out.println("The withdrawed amount exceeds your current balance for account user: " + getId());
 			System.exit(0);
 		}
 		else {
-		balance -= withdraw;
+			balance -= withdraw;
 		}
 	}
-	
+
 	public void deposit(double deposit) {
 		balance += deposit;
 	}
-	
-	
+
+
 }
