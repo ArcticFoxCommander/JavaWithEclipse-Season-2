@@ -5,9 +5,11 @@ public class TestAccount {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Account user = new Account(1122, 20000, 4.5); {
-			
+		Account user = new Account(1122, 20000); {	
 		}
+		
+		user.setAnnualInterestRate(4.5);
+		
 		double withdraw = 2500; user.withdraw(withdraw);
 		double deposit = 3000; user.deposit(deposit);
 		
@@ -20,7 +22,5 @@ public class TestAccount {
 							+ "Today you deposited: $%.2f%n"
 							+ "New Balance: $%.2f"
 							+ "%n__________________________________", user.dateCreated(), user.getId(), user.getMonthlyInterest(), withdraw, deposit, user.getBalance());
-		}
 	}
-
-
+}
