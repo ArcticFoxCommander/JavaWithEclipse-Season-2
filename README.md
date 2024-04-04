@@ -45,3 +45,31 @@ Exercise4 - Question (4 and 6)
 - Student
 
 ## Unit 2
+
+**Contains:**
+
+- Random Code, Examples, and Tests
+
+**Assignments:**
+
+Assignment1 - README contained
+
+Assignment2 - Question (1)
+- Book
+- Author
+
+Assignment3 - Question (1)
+- Java ATM Machine
+- Account
+- Customer
+
+**Exercises:**
+
+Exercise1 - Question (3 and 4)
+- Integer
+- Time
+
+Exercise2 - Question (1)
+- Course
+
+Exercise3 - Question (2, 4, 5, 7, 8, 10, 12, 13, and 17)
