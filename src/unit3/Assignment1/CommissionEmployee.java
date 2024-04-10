@@ -4,7 +4,6 @@ public class CommissionEmployee extends Employee{
 
 	private double grossSale;
 	private double commissionRate;
-	private double earnings;
 	
 	/**
 	 * @param name
@@ -74,21 +73,15 @@ public class CommissionEmployee extends Employee{
 	/**
 	 * @return the earnings
 	 */
-	public double getEarnings() {
-		return earnings = (grossSale * commissionRate);
+	public double earnings() {
+		return (grossSale * commissionRate);
 	}
 
-	/**
-	 * @param earnings the earnings to set
-	 */
-	public void setEarnings(double earnings) {
-		this.earnings = earnings;
-	}
 
 	@Override
 	public String toString() {
 		return String.format("CommissionEmployee [grossSale=%.2f, commissionRate=%.2f, earnings=%.2f, %ntoString()=%s]",
-				grossSale, commissionRate, earnings, super.toString());
+				grossSale, commissionRate, earnings(), super.toString());
 	}
 
 

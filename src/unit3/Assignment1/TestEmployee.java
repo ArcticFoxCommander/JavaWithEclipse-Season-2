@@ -43,7 +43,7 @@ public class TestEmployee {
 		CommissionEmployee employee1 = new CommissionEmployee(employeeName, ssn, address, gs, cr);
 		employee1.setCommissionRate(0.10);
 		employee1.setGrossSale(5000.00);
-		System.out.printf("Employee Information: %n%nFirst Name: %s%nMiddle Name: %s%nLast Name: %s%nAddress: %s, %s, %s %s%nSocial Secuirty Number: %s%nGross Sales Made: %.2f%nCommission Rate: %.2f%nEarnings: $%.2f%n%nUpdated Employee Information: %n%n%s", employee1.getName().getFirstName(), employee1.getName().getMiddleName(), employee1.getName().getLastName(), employee1.getAddress().getStreetName(), employee1.getAddress().getCity(), employee1.getAddress().getProvince(), employee1.getAddress().getPostalCode(), employee1.getSSN(), employee1.getGrossSale(), employee1.getCommissionRate(), employee1.getEarnings(), employee1.toString());
+		System.out.printf("Employee Information: %n%nFirst Name: %s%nMiddle Name: %s%nLast Name: %s%nAddress: %s, %s, %s %s%nSocial Secuirty Number: %s%nGross Sales Made: %.2f%nCommission Rate: %.2f%nEarnings: $%.2f%n%nUpdated Employee Information: %n%n%s", employee1.getName().getFirstName(), employee1.getName().getMiddleName(), employee1.getName().getLastName(), employee1.getAddress().getStreetName(), employee1.getAddress().getCity(), employee1.getAddress().getProvince(), employee1.getAddress().getPostalCode(), employee1.getSSN(), employee1.getGrossSale(), employee1.getCommissionRate(), employee1.earnings(), employee1.toString());
 	}
 
 }
