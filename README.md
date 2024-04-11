@@ -76,3 +76,26 @@ Exercise3 - Question (2, 4, 5, 7, 8, 10, 12, 13, and 17)
 - StringBuilder and StringBuffer
 
 Exercise4 - Question (2-4, 6, and 7)
+
+## Unit 3
+
+**Contains:**
+
+- Random Code, Examples, and Tests
+- Multiple classes (Super and sub)
+
+**Assignments:**
+
+Assignment1 - Question (1)
+- Address
+- Name
+- Employee
+- CommissionEmployee
+
+**Exercises:**
+
+Exercise1 - Question (4)
+- GeometricObject
+- Triangle
+
+Exercise2 - Question (5)
