@@ -6,7 +6,7 @@ public class TestDate {
 		// TODO Auto-generated method stub
 		// PUT IN NUMBERS AS MM/DD/YYYY
 		// OUTPUT IS IN YYYY/MM/DD
-		Date inputtedDate = new Date(2, 21, 2024);
+		Date inputtedDate = new Date(2, 23, 2024);
 		System.out.println(inputtedDate.displayDate());
 		
 		Date inputtedDate1 = new Date(1, 1, 2030);
