@@ -12,6 +12,7 @@ public class Question2 {
 		list.add("Austin");
 		list.add("Hello");
 		//list.add(new java.util.Date());
+		@SuppressWarnings("unused")
 		String city = list.get(0);
 		list.set(3, "Dallas");
 		System.out.println(list.get(2));
