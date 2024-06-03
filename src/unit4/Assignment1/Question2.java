@@ -2,36 +2,44 @@ package unit4.Assignment1;
 
 import java.io.IOException;
 
+	class ExceptionA2 extends Exception {
+	    public ExceptionA2(String message) {
+	        super(message);
+	    }
+	}
+	
+	class ExceptionB2 extends ExceptionA {
+	    public ExceptionB2(String message) {
+	        super(message);
+	    }
+	}
+
 public class Question2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Catching ExceptionA
 		try {
 			throw new ExceptionA("ExceptionA occurred");
-		} catch (Exception e) {
-			System.out.println("Caught: " + e.getMessage());
+		} catch (Exception exception) {
+			System.out.println("Caught: " + exception.getMessage());
 		}
 
-		// Catching ExceptionB
 		try {
 			throw new ExceptionB("ExceptionB occurred");
-		} catch (Exception e) {
-			System.out.println("Caught: " + e.getMessage());
+		} catch (Exception exception) {
+			System.out.println("Caught: " + exception.getMessage());
 		}
 
-		// Catching NullPointerException
 		try {
 			throw new NullPointerException("NullPointerException occurred");
-		} catch (Exception e) {
-			System.out.println("Caught: " + e.getMessage());
+		} catch (Exception exception) {
+			System.out.println("Caught: " + exception.getMessage());
 		}
 
-		// Catching IOException
 		try {
 			throw new IOException("IOException occurred");
-		} catch (Exception e) {
-			System.out.println("Caught: " + e.getMessage());
+		} catch (Exception exception) {
+			System.out.println("Caught: " + exception.getMessage());
 		}
 	}
 
